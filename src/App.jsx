@@ -1,0 +1,18 @@
+import GamePage from "./Components/GamePage";
+import HomePage from "./Components/HomePage";
+import ScoreCard from "./Components/ScoreCard";
+import { Routes, Route } from "react-router-dom";
+
+function App() {
+	return (
+		<div>
+			<Routes>
+				<Route path="/" element={<HomePage />} />
+				<Route path="/Game-Play" element={<GamePage />} />
+				<Route path="/Game-Play/Score-Card" element={<ScoreCard />} />
+			</Routes>
+		</div>
+	);
+}
+
+export default App;

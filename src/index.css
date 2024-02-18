@@ -1,0 +1,137 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #2c4251;
+	color: #c1c1c1;
+	align-items: center;
+}
+
+/* Home Page styling  */
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.HomePageHeroSection {
+	/* border: 4px solid white; */
+	min-height: 100vh;
+	width: 100vw;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+.HomePageHeroSection header {
+	text-align: center;
+	font-size: 24px;
+	/* border: 2px solid white; */
+}
+.HomePagemainSection {
+	/* border: 2px solid white; */
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 70vh;
+	max-width: 500px;
+	width: 100%;
+}
+.HomePagemainSection_player {
+	/* border: 2px solid red; */
+	flex-direction: column;
+	justify-content: space-between;
+	height: 60%;
+	width: 100%;
+	padding: 10px;
+}
+.HomePagemainSection_player .PlayerInput {
+	max-width: 300px;
+	width: 100%;
+	background-color: inherit;
+	color: white;
+}
+
+.HomePagemainSection span {
+	font-size: 29px;
+}
+
+/* Game page styling  */
+.GamePageHeroSection {
+	/* border: 4px solid white; */
+	min-height: 100vh;
+	height: 100%;
+	width: 100vw;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.GamePageHeroSection header {
+	flex-direction: column;
+	justify-content: space-around;
+	/* border: 2px solid white; */
+	height: 180px;
+	max-width: 500px;
+	width: 100%;
+}
+.user_profile {
+	width: 100%;
+	/* border: 2px solid red; */
+	justify-content: space-around;
+}
+.userTurn {
+	/* border-radius: 20px; */
+	box-shadow: 0 0 10px white;
+}
+.user {
+	min-width: 80px;
+	min-height: 60px;
+	/* box-shadow: 0 0 15px white; */
+	border-radius: 5px;
+	/* border: 2px solid white; */
+}
+.user_img {
+	height: 100%;
+	margin-right: 10px;
+}
+.user_img i {
+	/* border: 2px solid red; */
+	/* height: 100%; */
+	font-size: 3rem;
+}
+.user_info {
+	height: 100%;
+	justify-content: space-between;
+	font-size: 1.2rem;
+	flex-direction: column;
+}
+.GamePageHeroSection_title {
+	font-size: 24px;
+}
+main {
+	max-height: 500px;
+	height: 100%;
+	max-width: 500px;
+	width: 100%;
+	/* border: 2px solid red; */
+}
+.gamePlay {
+	/* border: 2px solid white; */
+	height: 100%;
+	width: 100%;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+.gamePlay button {
+	/* height: 120px;
+	width: 120px; */
+	width: 30%;
+	height: 100px;
+	color: #2c4251;
+	font-size: 2rem;
+	cursor: pointer;
+}
+.footer {
+	/* border: 2px solid red; */
+	max-width: 500px;
+	width: 100%;
+	justify-content: space-evenly;
+}
