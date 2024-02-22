@@ -83,6 +83,7 @@ export default function AppContextProvider({ children }) {
 					for (let btn of btns) {
 						btn.disabled = true;
 					}
+					// setTimeout()
 				}
 			}
 		}
@@ -90,12 +91,21 @@ export default function AppContextProvider({ children }) {
 	let checkDraw = (count) => {
 		if (count == 9) {
 			console.log("Draw");
+			toast("Its Draw");
+			for (let btn of btns) {
+				btn.disabled = false;
+				btn.innerText=""
+			}
 		}
 	};
 	let newGameBtn = () => {
 		initialValue();
 		setuser1Count(0);
 		setuser2Count(0);
+		for (let btn of btns) {
+			btn.disabled=false
+			btn.innerText = "";
+		}
 	};
 	let resetBtn = () => {
 		for (let box of btns) {
