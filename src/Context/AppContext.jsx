@@ -81,9 +81,10 @@ export default function AppContextProvider({ children }) {
 						return true;
 					});
 					for (let btn of btns) {
-						btn.disabled = true;
+						btn.disabled = false;
+						btn.innerText=""
 					}
-					// setTimeout()
+					setCount(1);
 				}
 			}
 		}
@@ -96,6 +97,7 @@ export default function AppContextProvider({ children }) {
 				btn.disabled = false;
 				btn.innerText=""
 			}
+			setCount(1);
 		}
 	};
 	let newGameBtn = () => {
@@ -131,7 +133,7 @@ export default function AppContextProvider({ children }) {
 		// console.log(event.target.innerText);
 		event.target.disabled = true;
 		checkWin();
-		checkWin ? checkDraw(count - 1) : checkDraw(count);
+		checkwin ? checkDraw(count - 1) : checkDraw(count);
 	};
 	const value = {
 		playerData,
