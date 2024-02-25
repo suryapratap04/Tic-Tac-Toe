@@ -36,7 +36,7 @@ export default function HomePage() {
 						value={playerData.player2}
 						onChange={dataSetter}
 					/>
-					<NavLink to="/Game-Play">
+					<NavLink to="/Tic-Tac-Toe/Game-Play">
 						<Button variant="contained" className="btn" onClick={submitHandler}>
 							Play
 						</Button>
